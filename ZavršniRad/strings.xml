@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Who Are Ya?</string>
+    <string name="input">Input field is empty</string>
+    <string name="errorDB">Player is not found</string>
+    <string name="guess">Guess</string>
+    <string name="of">of 8</string>
+    <string name="right">You guessed the player!</string>
+    <string name="wrong">You didn\'t guess the player :(</string>
+    <string name="years">years</string>
+    <string name="fetch">Unable to fetch info</string>
+    <string name="alert1">You have 8 chances to guess the football player from the Premier League, LaLiga, Serie A, Bundesliga or Ligue 1. After each guess, feedback will be revealed, showing how close your guess is to the mystery footballer in a number of categories.</string>
+    <string name="how">How to play?</string>
+    <string name="checkbox">Don\'t show this message again</string>
+    <string name="close">Close</string>
+    <string name="hint">Enter player\'s name</string>
+    <string name="enter">Enter</string>
+    <string name="exit">Exit the app</string>
+    <string name="restart">Play again</string>
+    <string name="alert2">Example: Luka Modrić  … Means that the mystery player is not Croatian, plays in La Liga and does not play for Real Madrid. However, the player is a midfielder and they are under the age of 38 whilst not having a shirt number #10.</string>
+</resources>

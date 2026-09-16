@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Who Are Ya?</string>
+    <string name="input">Pogrešan unos, prazno polje</string>
+    <string name="errorDB">Uneseni igrač nije pronađen</string>
+    <string name="guess">Pokušaj</string>
+    <string name="of">od 8</string>
+    <string name="right">Uspjeli ste! Točno ste pogodili traženog igrača</string>
+    <string name="wrong">Niste uspjeli pogoditi traženog igrača :(</string>
+    <string name="years">godina</string>
+    <string name="fetch">Neuspjel dovat podataka</string>
+    <string name="alert1">Imate 8 prilika da pogodite nogometaša iz Premier lige, LaLige, Serie A, Bundeslige ili Ligue 1. Nakon svakog pogađanja, otkrit će se povratna informacija, pokazujući koliko je vaša pretpostavka blizu misterioznog nogometaša u brojnim kategorijama</string>
+    <string name="alert2">Primjer: Luka Modrić … Znači da misteriozni igrač nije Hrvat, igra u La Ligi i ne igra za Real Madrid. Međutim, igrač je vezni igrač i mlađi je od 38 godina, a nema broj na dresu #10.</string>
+    <string name="how">Kako igrati?</string>
+    <string name="checkbox">Ne prikazuj ovu poruku ponovno</string>
+    <string name="close">Zatvori</string>
+    <string name="hint">Unesite ime igrača</string>
+    <string name="enter">Unos</string>
+    <string name="exit">Izlaz iz igre</string>
+    <string name="restart">Igrajte ponovno</string>
+</resources>
