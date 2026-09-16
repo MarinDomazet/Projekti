@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #345ABB;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.container {
+    padding-left: 135px;
+    padding-right: 135px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 68px));
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.maxw {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@font-face {
+    font-family: Rische;
+    src: url(/assets/fonts/rische.otf);
+}
+@font-face {
+    font-family: Work Sans;
+    src: url(/assets/fonts/WorkSans.ttf);
+}
+header > div{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 26px;
+}
+.menu {
+    position: absolute;
+    margin-top: 48px;
+    margin-left: 64px;
+    order: 1;
+}
+.menuMob {
+    position: absolute;
+    visibility: hidden;
+    order: 2;
+}
+.logo{
+    order: 3;
+    margin: 0 auto;
+}
+.section1{
+    padding-top: 177px;
+}
+.parent{
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: 0;
+}
+.lista{
+    padding-top: 32px;
+    display: flex;
+    gap: 24px;
+}
+.lista > li a{
+    font-family: Rische;
+    opacity: 0.8;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+}
+ul > li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-family: Rische;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 172%;
+    letter-spacing: 0.03em;
+}
+
+@media only screen and (max-width: 1024px){
+
+}
+@media only screen and (max-width: 768px) {
+    .menuMob{
+        visibility: visible;
+        margin-top: 48px;
+        margin-left: 64px;
+    }
+    .menu{
+        visibility: hidden;
+    }
+    li a{
+        font-size: 30px;
+    }
+    .lista > li a{
+        font-size: 12px;
+    }
+    .container {
+        padding-left: 64px;
+    }
+}
+@media only screen and (max-width: 425px){
+
+}
+@media only screen and (max-width: 375px){
+    .menuMob{
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .container {
+        padding-left: 20px;
+    }
+    li a {
+        font-size: 27px;
+    }
+}
+@media only screen and (max-width: 320px){
+    li a {
+        font-size: 24px;
+    }
+    .lista > li a {
+        font-size: 10px;
+    }
+    .lista{
+        padding-top: 10px;
+    }
+}
+
+/*
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 768px) {
+    .menuMob{
+        visibility: visible;
+    }
+    .menu{
+        visibility: hidden;
+    }
+    .res{
+        width: 40px;
+    }
+    .image3{
+        width: 140px;
+    }
+    .lista > li a{
+        font-size: 25px;
+    }
+
+}
+@media only screen and (max-width: 425px) {
+    .res{
+        width: 60px;
+    }
+    .image3{
+        width: 200px;
+    }
+    li a{
+        font-size: 85px;
+    }
+    .lista > li a {
+        font-size: 35px;
+    }
+    .lista{
+        padding-top: 60px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    li a{
+        font-size: 105px;
+    }
+    .lista > li a {
+        font-size: 55px;
+    }
+    .lista{
+        padding-top: 80px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    
+}
+*/

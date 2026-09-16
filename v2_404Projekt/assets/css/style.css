@@ -1,0 +1,276 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(/assets/img/poza.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.container {
+    padding-left: 135px;
+    padding-right: 135px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 68px));
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.maxw {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@font-face {
+    font-family: Rische;
+    src: url(/assets/fonts/rische.otf);
+}
+@font-face {
+    font-family: Work Sans;
+    src: url(/assets/fonts/WorkSans.ttf);
+}
+header > div{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 26px;
+}
+.menu {
+    position: absolute;
+    margin-top: 48px;
+    margin-left: 64px;
+    order: 1;
+}
+.menuMob {
+    position: absolute;
+    visibility: hidden;
+    order: 2;
+}
+.logo{
+    order: 3;
+    margin: 0 auto;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.parent{
+    max-width: 100%;
+}
+.parent > div{
+    text-align: center;
+}
+.find, .dubrovnik{
+    padding-top: 32px;
+}
+.null > h1{
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 160px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.found > h1{
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.dubrovnik > p{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.find > button{
+    padding: 20px 48px;
+    background-color: #0047FF;
+    color: white;
+    border-color: #0047FF;
+    box-shadow: 6px 57px 23px
+    rgba(26, 113, 255, 0.04),
+    3px 32px 20px rgba(26, 113, 255, 0.13),
+    2px 14px 14px rgba(26, 113, 255, 0.21),
+    0px 4px 8px rgba(26, 113, 255, 0.25),
+    0px 0px 0px rgba(26, 113, 255, 0.25);
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 768px) {
+    .menuMob {
+      visibility: visible;
+      margin-top: 48px;
+      margin-left: 64px;
+    }
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .menu {
+      visibility: hidden;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    .null > h1{
+        font-size: 125px;
+    }
+    .found > h1{
+        font-size: 40px;
+    }
+    .dubrovnik > p{
+        font-size: 11px;
+    }
+    .find > button {
+        padding: 14px 33px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .null > h1 {
+        font-size: 110px;
+    }
+    .found > h1 {
+        font-size: 29px;
+    }
+    .dubrovnik > p {
+        line-height: 130%;
+        font-size: 10px;
+    }
+    .find > button {
+        padding: 14px 32px;
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .menuMob{
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .null > h1 {
+        font-size: 95px;
+    }
+    .found > h1 {
+        font-size: 30px;
+    }
+    .dubrovnik > p {
+        line-height: 130%;
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .dubrovnik > p {
+        font-size: 10px;
+    }
+}
+
+
+/*
+@media only screen and (max-width: 1200px) {
+    .parent{
+        margin-left: 140px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .parent{
+        margin-left: 130px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .menuMob{
+        visibility: visible;
+    }
+    .menu{
+        visibility: hidden;
+    }
+    .parent{
+        margin-left: 220px;
+    }
+    .res{
+        width: 40px;
+    }
+    .image3{
+        width: 140px;
+    }
+    .logo{
+        grid-column-start: 8;
+    }
+    .dubrovnik > p {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .res{
+        width: 60px;
+    }
+    .image3{
+        width: 200px;
+    }
+    .parent{
+        padding-top: 200px;
+    }
+    .null > h1{
+        font-size: 290px;
+    }
+    .dubrovnik > p {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .find > button {
+        padding: 30px 98px;
+        font-size: 38px;
+        transform: translateX(-22%);
+    }
+}
+@media only screen and (max-width: 375px) {
+    .null > h1 {
+        font-size: 290px;
+    }
+    .found > h1 {
+        font-size: 85px;
+    }
+    .dubrovnik > p {
+        padding-top: 32px;
+        font-size: 38px;
+        width: 650px;
+        line-height: 44px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    header {
+        width: 1260px;
+        padding-right: 0px;
+    }
+    .parent{
+        margin-left: 170px;
+    }
+}
+*/

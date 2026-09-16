@@ -1,0 +1,626 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+.container {
+    padding-left: 135px;
+    padding-right: 135px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 68px));
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.maxw {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@font-face {
+    font-family: Rische;
+    src: url(/assets/fonts/rische.otf);
+}
+@font-face {
+    font-family: Work Sans;
+    src: url(/assets/fonts/WorkSans.ttf);
+}
+header > div{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 26px;
+}
+.menu {
+    position: absolute;
+    margin-top: 48px;
+    margin-left: 64px;
+    order: 1;
+}
+.menuMob {
+    position: absolute;
+    visibility: hidden;
+    order: 2;
+}
+.logo{
+    order: 3;
+    margin: 0 auto;
+}
+.section1{
+    padding-top: 236px;
+    display: flex;
+    justify-content: center;
+}
+.parentOrg{
+    max-width: 100%;
+    text-align: center;
+}
+.title{
+    padding-bottom: 180px;
+}
+.basic{
+    padding-bottom: 128px;
+}
+.container_v2{
+    padding-left: 101px;
+    padding-right: 101px;
+}
+.prijeNaslov{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+    color: #838383;
+    text-align: center;
+}
+.naslovi{
+    padding-bottom: 20px;
+    padding-top: 4px;
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+}
+.loremi{
+    text-align: left;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 180%;
+    color: #000000;
+}
+.find{
+    width: 568px;
+    height: 12px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.23em;
+    text-transform: uppercase;
+    color: #0047FF;
+    padding-bottom: 16px;
+}
+.discover{
+    width: 568px;
+    height: 118px;
+    font-family: 'Rische';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 110%;
+    color: #000000;
+}
+.more{
+    padding-top: 34px;
+    grid-column-start: 1;
+    display: flex;
+    gap: 32px;
+    padding-bottom: 180px;
+}
+footer {
+    background: rgba(1, 49, 170, 0.8);
+    backdrop-filter: blur(40px);
+    width: auto;
+}
+.yolo2 {
+    grid-column-start: 1;
+    padding-top: 120px;
+}
+.lists {
+    display: flex;
+    gap: 260px;
+    grid-column-start: 1;
+    padding-top: 180px;
+}
+.hello {
+    font-family: "Rische";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+.list1 {
+    list-style: none;
+    font-family: "Rische";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 170%;
+}
+.list1 > li > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.agency {
+    width: 217px;
+    height: 84px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 21px;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.lists::after {
+    content: "";
+    width: 1166px;
+    background: #4b68b1;
+    height: 1px;
+    position: absolute;
+    margin-top: 355px;
+}
+.flex {
+    margin-top: 180px;
+    grid-column-start: 1;
+    display: flex;
+    gap: 395px;
+    padding-bottom: 120px;
+}
+.made {
+    padding-top: 16px;
+}
+.lista2 {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    width: max-content;
+}
+.lista2 > li > a {
+    text-decoration: none;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 25px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+@media only screen and (max-width: 1260px) {
+    .lists{
+      gap: 60px;
+    }
+    .flex{
+      gap: 250px;
+    }
+    .lista2{
+      display: block;
+    }
+    .lists::after {
+      width: 766px;
+    }
+  }
+@media only screen and (max-width: 1024px) {
+    .container_v2 {
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+    .TOF {
+        width: 715px;
+    }
+    .more{
+        display: block;
+    }
+    .image1{
+        padding-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .TOF {
+        width: 604px;
+    }
+    .lists {
+      display: block;
+    }
+    .parent{
+      display: flex;
+    }
+    .lists::after {
+      margin-top: 115px;
+      width: 566px;
+    }
+    .list1, .parent{
+      padding-bottom: 50px;
+    }
+    .flex{
+      display: block;
+    }
+    .made{
+      padding-bottom: 40px;
+    }  
+}
+ @media only screen and (max-width: 768px) {
+    .menuMob {
+      visibility: visible;
+      margin-top: 48px;
+      margin-left: 64px;
+    }
+    .menu {
+      visibility: hidden;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    .TOF {
+        width: 542px;
+    }
+    .container_v2 {
+        padding-left: 45px;
+        padding-right: 0px;
+    }
+    .lists {
+      display: block;
+    }
+    .parent{
+      display: flex;
+    }
+    .lists::after {
+      margin-top: 115px;
+      width: 366px;
+    }
+    .list1, .parent{
+      padding-bottom: 50px;
+    }
+    .flex{
+      display: block;
+    }
+    .made{
+      padding-bottom: 40px;
+    }
+    .container{
+      padding-left: 80px;
+    }
+    .image1, .image2{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 635px) {
+    .TOF {
+        width: 440px;
+    }
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .hello{
+      margin-top: -100px;
+    }
+    .image1, .image2{
+        width: 440px;
+    }
+  }
+@media only screen and (max-width: 510px) {
+    .container{
+        padding-left: 20px;
+    }
+    .TOF {
+        width: 370px;
+    }
+    .title {
+        padding-bottom: 100px;
+    }
+    .discover {
+        height: 56px;
+        font-size: 43px;
+        line-height: 93%;
+    }
+    .loremi{
+        font-size: 13px;
+        line-height: 172%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .hello{
+      margin-top: -100px;
+    }
+    .lists::after {
+      margin-top: 115px;
+      width: 285px;
+    }
+    .container{
+      padding-left: 30px;
+    }
+    .TOF {
+        width: 330px;
+    }
+    .naslovi{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .find, .discover{
+        padding-left: 30px;
+    }
+    .section2{
+        padding-left: 0px;
+    }
+    .section1{
+        padding-top: 165px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .menuMob{
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .hello{
+      margin-top: -100px;
+      font-size: 27px;
+    }
+    .lists::after {
+      width: 245px;
+    }
+    .list1{
+      font-size: 20px;
+    }
+    .TOF {
+        width: 300px;
+    }
+    .title {
+        padding-bottom: 60px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .TOF {
+        width: 260px;
+    }
+    .loremi {
+        font-size: 11px;
+        line-height: 160%;
+    }
+    .prijeNaslov{
+        font-size: 9px;
+    }
+    .container_v2 {
+        padding-left: 7px;
+        padding-right: 0px;
+    }
+    .discover {
+        height: 25px;
+        font-size: 30px;
+        line-height: 89%;
+    }
+    .find {
+        height: 0px;
+        font-size: 9px;
+    }
+    .section1{
+        padding-top: 165px;
+    }
+}
+
+/*
+@media only screen and (max-width: 1024px) {
+    .loremi{
+        font-size: 23px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .menuMob{
+        visibility: visible;
+    }
+    .menu{
+        visibility: hidden;
+    }
+    .TOF{
+        width: 900px;
+    }
+    .res{
+        width: 40px;
+    }
+    .shine{
+        transform: translateX(880px);
+    }
+    .loremi{
+        font-size: 28px;
+    }
+    .naslovi{
+        font-size: 54px;
+        padding-top: 20px;
+    }
+    .prijeNaslov{
+        font-size: 21px;
+    }
+    .title{
+        grid-column-start: 4;
+    }
+    .lista2 > li > a {
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .agency {
+        width: 417px;
+        font-size: 19px;
+        line-height: 29px;
+    }
+    .lists{
+        gap: 180px;
+    }
+    .lista2{
+        display: block;
+    }
+    .list1{
+        font-size: 33px;
+    }
+    .image3{
+        width: 140px;
+    }
+    .hello{
+        font-size: 34px;
+    }
+    .social{
+        width: 30px;
+    }
+    .parent{
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .logo{
+        transform: translateX(420px);
+    }
+    .res{
+        width: 60px;
+    }
+    .loremi {
+        font-size: 41px;
+    }
+    .prijeNaslov {
+        font-size: 22px;
+    }
+    .naslovi{
+        font-size: 54px;
+        padding-top: 20px;
+    }
+    .find{
+        font-size: 22px;
+    }
+    .discover{
+        font-size: 63px;
+    }
+    .more{
+        display: block;
+    }
+    .image1{
+        padding-bottom: 30px;
+        width: 800px;
+        height: 400px;
+    }
+    .image2{
+        width: 800px;
+        height: 400px;
+    }
+    .image3{
+        width: 200px;
+    }
+    .lists{
+        display: block;
+    }
+    .bottom{
+        padding-bottom: 80px;
+    }
+    .hello{
+        font-size: 76px;
+    }
+    .social{
+        width: 60px;
+    }
+    .parent{
+        width: 200px;
+    }
+    .list1{
+        font-size: 55px;
+    }
+    .agency{
+        line-height: 41px;
+        width: 717px;
+        font-size: 30px;
+    }
+    .made{
+        width: 350px;
+    }
+    .copyright{
+        width: 500px;
+    }
+    .lista2 > li > a {
+        font-size: 30px;
+    }
+    .flex{
+        display: block;
+    }
+    .lista2{
+        padding-top: 80px;
+        display: block;
+        line-height: 50px;
+    }
+    .lists::after{
+        margin-top: 155px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .title{
+        margin-left: 0px;
+    }
+    .find {
+        font-size: 26px;
+    }
+    .discover {
+        font-size: 73px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .image1 {
+        padding-bottom: 40px;
+        width: 930px;
+        height: 480px;
+    }
+    .image2{
+        width: 930px;
+        height: 480px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .container{
+        padding-left: 120px;
+        padding-right: 0px;
+    }
+    .lists::after{
+        width: 1000px;
+    }
+    .loremi {
+        font-size: 46px;
+    }
+    .prijeNaslov {
+        font-size: 27px;
+    }
+    .naslovi {
+        font-size: 64px;
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+    .image1{
+        width: 1030px;
+        height: 550px;
+    }
+    .image2{
+        width: 1030px;
+        height: 550px;
+    }
+}*/
